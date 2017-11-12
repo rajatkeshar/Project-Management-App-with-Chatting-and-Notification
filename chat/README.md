@@ -20,14 +20,14 @@ This application is made with Node.js, Express, Socket.io, redisDB, BackboneJS a
 
 ## Building Docker images
 
-- Syntax: docker build -t <image_name> .
-- Example: docker build -t chat .
+- Syntax: sudo docker build -t <image_name> .
+- Example: sudo docker build -t chat .
 
 ## Run Docker Image
 
-- You can see your docker images by using this command => docker images
-- syntax: docker run -p <new_port>:<existing_port> <image_name>
-- Example: docker run -p 80:8080 chat
+- You can see your docker images by using this command => sudo docker images
+- syntax: sudo docker run -p <new_port>:<existing_port> <image_name>
+- Example: sudo docker run -p 80:8080 chat
 
 ## How To Use Docker Instance
 

@@ -26,8 +26,8 @@ This application is made with Node.js, Express, Socket.io, redisDB, BackboneJS a
 ## Run Docker Image
 
 - You can see your docker images by using this command => sudo docker images
-- syntax: docker run -p <new_port>:<existing_port> <image_name>
-- Example: docker run -p 80:8080 chat
+- syntax: sudo docker run -p <new_port>:<existing_port> <image_name>
+- Example: sudo docker run -p 80:8080 chat
 
 ## How To Use Docker Instance
 

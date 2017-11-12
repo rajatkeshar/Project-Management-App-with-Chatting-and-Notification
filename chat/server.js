@@ -63,8 +63,7 @@ io.sockets.on('connection', function (socket) {
 	});
 
 	socket.on('message', function (data) {
-		client.hgetall(REDIS_KEY_USER_INFO_HASH, function(err, userInfo) {
-			console.log(userInfo);			
+		client.hgetall(REDIS_KEY_USER_INFO_HASH, function(err, userInfo) {			
 			io.sockets.emit('message', data);
 			messages.push(data);
 		});
@@ -79,7 +78,7 @@ io.sockets.on('connection', function (socket) {
 			"status" : "Available",
 		};
 		client.hmset(REDIS_KEY_USER_INFO_HASH, userInfo);
-
+		console.log("Notification: New Member Is Added In Project ", data.onlineUser);
 		users.push(data);
 		io.sockets.emit('newUser', users); 
 	});

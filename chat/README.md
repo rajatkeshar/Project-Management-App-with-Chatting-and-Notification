@@ -16,8 +16,24 @@ This application is made with Node.js, Express, Socket.io, redisDB, BackboneJS a
 ## How to use :
 
 - npm start or node server.js / nodemon server.js
-- Go to IP:port from any (recent) navigator to start chatting !
+- Go to IP:port from any (recent) navigator to start App !
+
+## Building Docker images
+
+- Syntax: docker build -t <image_name> .
+- Example: docker build -t chat .
+
+## Run Docker Image
+
+- You can see your docker images by using this command => docker images
+- syntax: docker run -p <new_port>:<existing_port> <image_name>
+- Example: docker run -p 80:8080 chat
+
+## How To Use Docker Instance
+
+- Go to IP:port from any (recent) navigator to start App !
 
 ### Credits
 
 Creator : [Rajat Kesharwani] (https://github.com/salinsunny2)
+
